@@ -38,6 +38,14 @@ const crossfade: Setting = {
     show_if: () => settings().use_crossfade,
 }
 
+const auto_shuffle: Setting = {
+    title: 'Auto shuffle tracklist',
+    desc: 'Shuffle tracklist before start playing Playlist / Artist / Album',
+    type: SettingType.binary,
+    state: () => settings().auto_shuffle,
+    action: () => settings().toggleAutoShuffle(),
+}
+
 // const streaming_quality_options = [
 //     {
 //         title: 'Original',
@@ -79,4 +87,4 @@ const crossfade: Setting = {
 //     options: streaming_quality_options as any,
 // }
 
-export default [use_silence, use_crossfade, crossfade]
+export default [use_silence, use_crossfade, crossfade, auto_shuffle]

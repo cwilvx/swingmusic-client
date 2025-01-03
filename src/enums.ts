@@ -98,8 +98,9 @@ export interface DBSettings {
   removeRemasterInfo: boolean;
   mergeAlbums: boolean;
   showAlbumsAsSingles: boolean;
-  enablePeriodicScans: boolean
-  scanInterval: number
+  enablePeriodicScans: boolean;
+  scanInterval: number;
+  autoShuffle: boolean;
   plugins: Plugin[];
   version: string;
   lastfmApiKey: string;
